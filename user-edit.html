@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>PhysioTherapist</title>
+    <title>Kodai Hospital </title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -181,6 +181,7 @@
                                     <ul>
                                         <li class="more-details">
                                             <a href="#"><i class="ti-user"></i>View Profile</a>
+                                            <!-- <a href="#!"><i class="ti-settings"></i>Settings</a> -->
                                             <a href="auth-normal-sign-in.html"><i
                                                     class="ti-layout-sidebar-left"></i>Logout</a>
                                         </li>
@@ -188,29 +189,18 @@
                                 </div>
                             </div>
 
-
-
                             <ul class="pcoded-item pcoded-left-item mt-3">
-                                <li >
-                                    <a href="#" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="fa fa-address-card-o"></i></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Dashboard</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
                                 <li class="active">
                                     <a href="userRecord.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="fa fa-user fa-lg"></i></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Staff
-                                            List</span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">User</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="Consultation-add.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class='fa fa-stethoscope fa-lg'></i></span>
-                                        <span class="pcoded-mtext"
-                                            data-i18n="nav.form-components.main">Consultation</span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Consultation</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -233,138 +223,142 @@
                                     <div class="page-body">
                                         <!-- Basic table card start -->
                                         <div class="card">
-                                            <div class="card-header table-header" style="height:52px ;">
-                                                <h5 style="color: white;"><i
-                                                        class='fa fa-user fa-lg'></i>&nbsp;&nbsp;Staff List</h5>
-                                                <!-- <button class="btn float-sm-right text-white"
-                                                    style="background-color: #448aff!important; margin-top: -11px;"><i
+                                            <div class="card-header"
+                                                style="background-color: #448aff; padding-bottom: 0px;padding-top: 15px;">
+                                                <h5 class="text-white "><i class="fa fa-user fa-lg"></i>&nbsp;&nbsp;
+                                                    User</h5>
+                                                <!-- <span>use class <code>table</code> inside table element</span> -->
+                                                <!-- <div class="card-header-right text-white"> -->
+                                                <button class="btn float-sm-right text-white"
+                                                    style="background-color:#448aff;margin-top: -8px;"><a href="userRecord.html" style="color:white"><i
                                                         class="fa fa-reply"></i>
-                                                    Back</button> -->
+                                                    Back</a></button>
+                                                <!-- </div> -->
                                             </div>
+                                            <div class="form-group row mt-3">
+                                                <div class="col-sm-6">
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <button class=" btn text-white float-right"
+                                                        style="background-color: #448aff;"><a href="Consultation-details.html" style="color:white;"> <i
+                                                            class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Consultion
+                                                        Details</button>
+                                                </div>
 
-
+                                            </div>
                                             <div class="card-block ">
                                                 <div class="form-group row">
                                                     <div class="col-sm-6">
-                                                        <label>Staff Name</label>
-                                                        <input type="text" class="form-control" placeholder="Name">
+                                                        <label>Name</label>
+                                                        <input type="text" class="form-control" value="Jenifer">
                                                     </div>
                                                     <div class="col-sm-6">
-                                                        <label>Employement ID</label>
-                                                        <input type="text" class="form-control" placeholder="Employee ID">
+                                                        <label>Phone Number</label>
+                                                        <input type="text" class="form-control" value="9962545245">
                                                     </div>
-                                                    
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="col-sm-6">
                                                         <label>Email</label>
-                                                        <input type="text" class="form-control" placeholder="Email">
+                                                        <input type="text" class="form-control"
+                                                            value="jeni34@gmail.com">
                                                     </div>
                                                     <div class="col-sm-6">
-                                                        <label>Phone Number</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Phone Number">
-                                                    </div>    
-                                                    <!-- <div class="col-sm-6">
                                                         <label>Gender</label><br>
                                                         <input type="radio" class="mt-2 " class="form-check-input"
                                                             type="radio" name="inlineRadioOptions" id="inlineRadio1"
                                                             value="option1">
-                                                        <lable for="inlineRadio1">Male</label>
+                                                        <lable for="inlineRadio1" style="color:Black ;">Male</label>
                                                             <input type="radio" class="mt-2 ml-3"
                                                                 class="form-check-input" type="radio"
-                                                                name="inlineRadioOptions" id="inlineRadio1"
-                                                                value="option1">
-                                                            <lable for="inlineRadio1">Female</label>
+                                                                name="inlineRadioOptions" id="inlineRadio2"
+                                                                value="option2" checked>
+                                                            <lable for="inlineRadio2" style="color:Black ;">Female</label>
                                                                 <input type="radio" class="mt-2 ml-3"
                                                                     class="form-check-input" type="radio"
-                                                                    name="inlineRadioOptions" id="inlineRadio1"
-                                                                    value="option1">
-                                                                <lable for="inlineRadio1">Others</label>
-                                                    </div> -->
+                                                                    name="inlineRadioOptions" id="inlineRadio3"
+                                                                    value="option3">
+                                                                <lable for="inlineRadio3" style="color:Black ;">Others</label>
+                                                    </div>
                                                 </div>
-                                                <!-- <div class="form-group row">
+                                                <div class="form-group row">
                                                     <div class="col-sm-6">
                                                         <label>DOB</label>
-                                                        <input type="dob" class="form-control" placeholder="DOB">
+                                                        <input type="dob" class="form-control" value="18-06-1996">
                                                     </div>
                                                     <div class="col-sm-6">
-                                                        <label>Marital Status</label><br>
+                                                        <label style="color:Black ;">Marital Status</label><br>
                                                         <input type="radio" class="mt-2" class="form-check-input"
-                                                            type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                                            value="option1">
-                                                        <lable for="inlineRadio1">Single</label>
+                                                            type="radio" name="inlineRadioOptions2" id="inlineRadio11"
+                                                            value="optionA" checked>
+                                                        <lable for="inlineRadio11" style="color:Black ;">Single</label>
                                                             <input type="radio" class="mt-2 ml-3"
                                                                 class="form-check-input" type="radio"
-                                                                name="inlineRadioOptions" id="inlineRadio1"
-                                                                value="option1">
-                                                            <lable for="inlineRadio1">Married</label>
+                                                                name="inlineRadioOptions2" id="inlineRadio12"
+                                                                value="optionB" >
+                                                            <lable for="inlineRadio12" style="color:Black ;">Married</label>
                                                                 <input type="radio" class="mt-2 ml-3"
                                                                     class="form-check-input" type="radio"
-                                                                    name="inlineRadioOptions" id="inlineRadio1"
-                                                                    value="option1">
-                                                                <lable for="inlineRadio1"> widowed</label>
+                                                                    name="inlineRadioOptions2" id="inlineRadio13"
+                                                                    value="optionC">
+                                                                <lable for="inlineRadio13" style="color:Black ;">Widowed</label>
                                                                     <input type="radio" class="mt-2 ml-3"
                                                                         class="form-check-input" type="radio"
-                                                                        name="inlineRadioOptions" id="inlineRadio1"
-                                                                        value="option1">
-                                                                    <lable for="inlineRadio1">Divorced</label>
+                                                                        name="inlineRadioOptions2" id="inlineRadio14"
+                                                                        value="optionD">
+                                                                    <lable for="inlineRadio14">Divorced</label>
                                                     </div>
-                                                </div> -->
-                                                <!-- <div class="form-group row">
+                                                </div>
+                                                <div class="form-group row">
                                                     <div class="col-sm-6">
                                                         <label>Height</label>
-                                                        <input type="text" class="form-control" placeholder="Height">
+                                                        <input type="number" class="form-control" value="168">
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <label>Weight</label>
-                                                        <input type="text" class="form-control" placeholder="Weight">
+                                                        <input type="number" class="form-control" value="58">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="col-sm-6">
                                                         <label for="exampleFormControlTextarea1">Blood Group</label>
                                                         <input type="text" class="form-control"
-                                                            placeholder="Blood Group">
+                                                            value="B+ve">
                                                     </div>
-
                                                     <div class="col-sm-3">
                                                         <label>City</label>
-                                                        <input type="text" class="form-control" placeholder="City">
+                                                        <input type="text" class="form-control" value="Chennai">
                                                     </div>
                                                     <div class="col-sm-3">
                                                         <label>District</label>
-                                                        <input type="text" class="form-control" placeholder="District">
-
-
+                                                        <input type="text" class="form-control" value="Chennai">
                                                     </div>
-                                                </div> -->
+                                                </div>
                                                 <div class="form-group row">
                                                     <div class="col-sm-6">
                                                         <label for="exampleFormControlTextarea1">Address</label>
-                                                        <textarea class="form-control"
-                                                            id="exampleFormControlTextarea1"></textarea>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" 
+                                                            >2nd Main road</textarea>
                                                     </div>
-                                                    <!-- <div class="col-sm-2">
+                                                    <div class="col-sm-2">
                                                         <label>State</label>
-                                                        <input type="text" class="form-control" placeholder="State">
+                                                        <input type="text" class="form-control" value="Tamil Nadu">
                                                     </div>
                                                     <div class="col-sm-2" >
                                                         <label>Country</label>
-                                                        <input type="text" class="form-control" placeholder="Country">
+                                                        <input type="text" class="form-control" value="India">
                                                     </div>
-                                                    <div class="col-sm-2">
+                                                    <div class="col-sm-2" >
                                                         <label>Pincode</label>
-                                                        <input type="text" class="form-control" placeholder="Pincode">
-                                                    </div> -->
+                                                        <input type="text" class="form-control" value="620040">
+                                                    </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="col-sm-6">
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <button class=" btn text-white float-right"
-                                                            style="background-color: #448aff;"><a href="userRecord.html"
-                                                                style="color:white;">Save</a></button>
+                                                            style="background-color: #448aff;">Update</button>
                                                     </div>
 
                                                 </div>
@@ -377,7 +371,6 @@
                             </div>
                             <!-- Main-body end -->
 
-                            <div id="styleSelector">
 
                             </div>
                         </div>

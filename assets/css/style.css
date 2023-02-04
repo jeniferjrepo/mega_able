@@ -16458,3 +16458,19 @@ body.dark {
   bottom: 50px;
   opacity: 1;
 }
+.img-fluid {
+  max-width: 75%;
+  height: auto;
+}
+.table-header{
+  background: #448aff !important;
+}
+.fa-arrow-circle-left:before {
+  content: "\f0a8";
+  color: #448aff;
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: black !important;
+    } 

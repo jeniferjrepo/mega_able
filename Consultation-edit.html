@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>PhysioTherapist</title>
+    <title>Kodai Hospital </title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -181,6 +181,7 @@
                                     <ul>
                                         <li class="more-details">
                                             <a href="#"><i class="ti-user"></i>View Profile</a>
+                                           
                                             <a href="auth-normal-sign-in.html"><i
                                                     class="ti-layout-sidebar-left"></i>Logout</a>
                                         </li>
@@ -189,28 +190,18 @@
                             </div>
 
 
-
                             <ul class="pcoded-item pcoded-left-item mt-3">
-                                <li >
-                                    <a href="#" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="fa fa-address-card-o"></i></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Dashboard</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                                <li class="active">
+                                <li>
                                     <a href="userRecord.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="fa fa-user fa-lg"></i></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Staff
-                                            List</span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">User</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="Consultation-add.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class='fa fa-stethoscope fa-lg'></i></span>
-                                        <span class="pcoded-mtext"
-                                            data-i18n="nav.form-components.main">Consultation</span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Consultation</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -235,136 +226,159 @@
                                         <div class="card">
                                             <div class="card-header table-header" style="height:52px ;">
                                                 <h5 style="color: white;"><i
-                                                        class='fa fa-user fa-lg'></i>&nbsp;&nbsp;Staff List</h5>
-                                                <!-- <button class="btn float-sm-right text-white"
-                                                    style="background-color: #448aff!important; margin-top: -11px;"><i
+                                                        class='fa fa-stethoscope fa-lg'></i>&nbsp;&nbsp;Consultation
+                                                    </h5>
+                                                <!-- <span>use class <code>table</code> inside table element</span> -->
+                                                <!-- <div class="card-header-right text-white"> -->
+                                                <button class="btn float-sm-right text-white"
+                                                    style="background-color:#448aff;margin-top: -11px;"><a href="Consultation-details.html" style="color:white"><i
                                                         class="fa fa-reply"></i>
-                                                    Back</button> -->
+                                                    Back</a></button>
+                                                <!-- </div> -->
                                             </div>
-
-
                                             <div class="card-block ">
                                                 <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                        <label>Staff Name</label>
-                                                        <input type="text" class="form-control" placeholder="Name">
+                                                    <div class="col-sm-6 ">
+                                                        <label>Doctor Name</label>
+                                                        <input type="text" class="form-control"
+                                                            value="Dr. Priya">
                                                     </div>
-                                                    <div class="col-sm-6">
-                                                        <label>Employement ID</label>
-                                                        <input type="text" class="form-control" placeholder="Employee ID">
+                                                    <div class="col-sm-3">
+                                                        <label>Date</label>
+                                                        <input type="text" class="form-control" value="25-02-2022">
                                                     </div>
-                                                    
+                                                    <div class="col-sm-3">
+                                                        <label>Time</label>
+                                                        <input type="text" class="form-control" value="10:30 AM">
+                                                    </div>
                                                 </div>
-                                                <div class="form-group row">
+                                                <div class="form-group row ">
+                                                    <div class="col-sm-12 mt-3">
+                                                        <form class="form-material">
+                                                            <div class="form-group form-primary">
+                                                                <input type="text" name="footer-email"
+                                                                    class="form-control" required="" value="jenifer,9962545245,jeni34@gmail. com ">
+                                                                <span class="form-bar"></span>
+                                                                <label class="float-label"><i
+                                                                        class="fa fa-search m-r-10"></i> Search by user
+                                                                    Name , Email and Phone Number
+                                                                </label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row" >
                                                     <div class="col-sm-6">
-                                                        <label>Email</label>
-                                                        <input type="text" class="form-control" placeholder="Email">
+                                                        <label>Name</label>
+                                                        <input type="text" class="form-control" style="color:black ;"
+                                                            placeholder="Name" value="Jenifer" disabled>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <label>Phone Number</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Phone Number">
-                                                    </div>    
-                                                    <!-- <div class="col-sm-6">
-                                                        <label>Gender</label><br>
-                                                        <input type="radio" class="mt-2 " class="form-check-input"
-                                                            type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                                            value="option1">
-                                                        <lable for="inlineRadio1">Male</label>
-                                                            <input type="radio" class="mt-2 ml-3"
-                                                                class="form-check-input" type="radio"
-                                                                name="inlineRadioOptions" id="inlineRadio1"
-                                                                value="option1">
-                                                            <lable for="inlineRadio1">Female</label>
-                                                                <input type="radio" class="mt-2 ml-3"
-                                                                    class="form-check-input" type="radio"
-                                                                    name="inlineRadioOptions" id="inlineRadio1"
-                                                                    value="option1">
-                                                                <lable for="inlineRadio1">Others</label>
-                                                    </div> -->
-                                                </div>
-                                                <!-- <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                        <label>DOB</label>
-                                                        <input type="dob" class="form-control" placeholder="DOB">
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <label>Marital Status</label><br>
-                                                        <input type="radio" class="mt-2" class="form-check-input"
-                                                            type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                                            value="option1">
-                                                        <lable for="inlineRadio1">Single</label>
-                                                            <input type="radio" class="mt-2 ml-3"
-                                                                class="form-check-input" type="radio"
-                                                                name="inlineRadioOptions" id="inlineRadio1"
-                                                                value="option1">
-                                                            <lable for="inlineRadio1">Married</label>
-                                                                <input type="radio" class="mt-2 ml-3"
-                                                                    class="form-check-input" type="radio"
-                                                                    name="inlineRadioOptions" id="inlineRadio1"
-                                                                    value="option1">
-                                                                <lable for="inlineRadio1"> widowed</label>
-                                                                    <input type="radio" class="mt-2 ml-3"
-                                                                        class="form-check-input" type="radio"
-                                                                        name="inlineRadioOptions" id="inlineRadio1"
-                                                                        value="option1">
-                                                                    <lable for="inlineRadio1">Divorced</label>
-                                                    </div>
-                                                </div> -->
-                                                <!-- <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                        <label>Height</label>
-                                                        <input type="text" class="form-control" placeholder="Height">
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <label>Weight</label>
-                                                        <input type="text" class="form-control" placeholder="Weight">
+                                                        <input type="number" class="form-control" style="color:black ;"
+                                                            placeholder="Phone Number" value="9962545245" disabled>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="col-sm-6">
-                                                        <label for="exampleFormControlTextarea1">Blood Group</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Blood Group">
+                                                        <label>Body Temperature (&#8457)</label>
+                                                        <input type="number" class="form-control"
+                                                        value="99">
                                                     </div>
-
-                                                    <div class="col-sm-3">
-                                                        <label>City</label>
-                                                        <input type="text" class="form-control" placeholder="City">
+                                                    <div class="col-sm-6">
+                                                        <label>Blood Oxygen (%)</label>
+                                                        <input type="number" class="form-control"
+                                                        value="90">
                                                     </div>
-                                                    <div class="col-sm-3">
-                                                        <label>District</label>
-                                                        <input type="text" class="form-control" placeholder="District">
-
-
-                                                    </div>
-                                                </div> -->
+                                                </div>
                                                 <div class="form-group row">
                                                     <div class="col-sm-6">
-                                                        <label for="exampleFormControlTextarea1">Address</label>
-                                                        <textarea class="form-control"
-                                                            id="exampleFormControlTextarea1"></textarea>
+                                                        <label>Blood Pressure</label>
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <span>Systolic (mmHg)</span>
+                                                                <input type="number" class="form-control"
+                                                                value="110">
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <span>Diastolic (mmHg)</span>
+                                                                <input type="number" class="form-control"
+                                                                value="90">
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <!-- <div class="col-sm-2">
-                                                        <label>State</label>
-                                                        <input type="text" class="form-control" placeholder="State">
+                                                    <div class="col-sm-6">
+                                                        <label>Blood Glucose</label>
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <span>Fasting (mg/dl)</span>
+                                                                <input type="number" class="form-control"
+                                                                value="110">
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <span>Post Prandial(mg/dl)</span>
+                                                                <input type="number" class="form-control"
+                                                                value="80">
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-sm-2" >
-                                                        <label>Country</label>
-                                                        <input type="text" class="form-control" placeholder="Country">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6">
+                                                        <label>Respiratory Rate (Bpm)</label>
+                                                        <input type="number" class="form-control"
+                                                        value="52">
                                                     </div>
-                                                    <div class="col-sm-2">
-                                                        <label>Pincode</label>
-                                                        <input type="text" class="form-control" placeholder="Pincode">
-                                                    </div> -->
+                                                    <div class="col-sm-6">
+                                                        <label>Pulse Rate (Bpm) </label>
+                                                        <input type="number" class="form-control" value="62">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6">
+                                                        <label>Patient Medical Background
+                                                        </label>
+                                                        <textarea type="text" class="form-control"
+                                                        placeholder="Patient Medical Background">I have breathing trouble </textarea>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label>Examination
+                                                        </label>
+                                                        <textarea type="text" class="form-control" placeholder="Examination">Corona Test</textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6">
+                                                       
+                                                        <label>Reason</label><br>
+                                                            <select class="custom-select col-sm-12" id="inputGroupSelect01">
+                                                              <option disabled>---Select---</option>
+                                                              <option value="1">Anemia</option>
+                                                              <option value="2">Asthma</option>
+                                                              <option value="3" selected>Bronchitis</option>
+                                                              <option value="4">Chickenpox</option>
+                                                              <option value="5">Diabates</option>
+                                                              <option value="6">Pneumonia</option>
+                                                              <option value="7">Thyroid Disease</option>
+                                                              <option value="8">Ulcer</option>
+                                                              <option value="9">Others</option>
+                                                            </select>
+                                                         
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label>Diagnosis
+                                                            </label>
+                                                        <textarea type="text" class="form-control" placeholder="Diagnosis">Over Cold</textarea>
+                                                    </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="col-sm-6">
                                                     </div>
                                                     <div class="col-sm-6">
+                                                        <button class=" btn text-white float-right ml-4"
+                                                        style="background-color: #448aff;">Update</button>
                                                         <button class=" btn text-white float-right"
-                                                            style="background-color: #448aff;"><a href="userRecord.html"
-                                                                style="color:white;">Save</a></button>
+                                                            style="background-color: #19b9f8;"><a href="vital-report.html" style="color:white;"><i class="fa fa-bar-chart"></i>&nbsp;&nbsp;Vital History</a></button>
                                                     </div>
 
                                                 </div>
@@ -387,51 +401,7 @@
         </div>
     </div>
 
-    <!-- Warning Section Starts -->
-    <!-- Older IE warning message -->
-    <!--[if lt IE 10]>
-    <div class="ie-warning">
-        <h1>Warning!!</h1>
-        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
-        <div class="iew-container">
-            <ul class="iew-download">
-                <li>
-                    <a href="http://www.google.com/chrome/">
-                        <img src="assets/images/browser/chrome.png" alt="Chrome">
-                        <div>Chrome</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.mozilla.org/en-US/firefox/new/">
-                        <img src="assets/images/browser/firefox.png" alt="Firefox">
-                        <div>Firefox</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.opera.com">
-                        <img src="assets/images/browser/opera.png" alt="Opera">
-                        <div>Opera</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.apple.com/safari/">
-                        <img src="assets/images/browser/safari.png" alt="Safari">
-                        <div>Safari</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                        <img src="assets/images/browser/ie.png" alt="">
-                        <div>IE (9 & above)</div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <p>Sorry for the inconvenience!</p>
-    </div>
-    <![endif]-->
-    <!-- Warning Section Ends -->
-    <!-- Required Jquery -->
+   
     <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
     <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
