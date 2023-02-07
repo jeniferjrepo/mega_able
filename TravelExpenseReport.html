@@ -212,7 +212,7 @@
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="AssignService.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class='fa fa-stethoscope fa-lg'></i></span>
                                         <span class="pcoded-mtext"
@@ -248,7 +248,7 @@
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="TravelExpenseReport.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class='fa fa-subway fa-lg'></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Travel Expense Report</span>
@@ -283,102 +283,86 @@
                                         <div class="card">
                                             <div class="card-header table-header" style="height:52px ;">
                                                 <h5 style="color: white;"><i
-                                                        class="fa fa-file-text fa-lg"></i>&nbsp;&nbsp;Assign Service</h5>
-                                                <a href="AssignServiceForm.html" class="btn float-sm-right text-black text-decoration-none"
+                                                        class="fa fa-file-text fa-lg"></i>&nbsp;&nbsp;Travel Expense Report</h5>
+                                                <!-- <a href="AssignServiceForm.html" class="btn float-sm-right text-black text-decoration-none"
                                                     style="background: #fff!important; margin-top: -13px;"><i
                                                         class="fa fa-plus"></i>Assign
-                                                </a>
+                                                </a> -->
                                             </div>
 
-                                            <!-- <div class="card-block ">
+                                            <div class="card-block">
                                                 <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                        <label>Start Date to End Date</label>
-                                                        <input type="text" class="form-control"
-                                                            value="25-02-2022 to 26-02-2022">
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <label> Number of Patients</label>
-                                                        <input type="text" class="form-control" value="25">
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <label>Total Amount Fees</label>
-                                                        <input type="text" class="form-control" value="5000">
+                                                    <div class="col-sm-12">
+                                                        <label>Select Staff</label>
+                                                        <select>
+                                                            <option>--Select--</option>
+                                                            <option>Priya</option>
+                                                            <option>Gokul</option>
+                                                            <option>Raja</option>
+                                                            <option>Kaviya</option>
+                                                            <option>Jenifer</option>
+                                                        </select>
                                                     </div>
                                                 </div>
-                                            </div> -->
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6">
+                                                        <label>Start Date</label>
+                                                        <input type="date" class="form-control" placeholder="Select Start Date">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label>End Date</label>
+                                                        <input type="date" class="form-control" placeholder="Select End Date">
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                             <div class="card-block table-border-style">
                                                 <div class="table-responsive">
                                                     <table class="table">
                                                         <thead>
                                                             <tr>
-                                                                <th>Service</th>
-                                                                <th>Client Phone No.</th>
-                                                                <th>Start Time</th>
-                                                                <th>End Time</th>
-                                                                <th>Start Location</th>
-                                                                <th>End Location</th>
-                                                                <th>Destination</th>
-                                                                <th>Distance</th>
-                                                                <th>Status</th>
+                                                                <th>Date</th>
+                                                                <th>Staff Name</th>
+                                                                <th>Travel Distance</th>
+                                                                <th>Amount per KM</th>
+                                                                <th>Total Amount</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td>Geriatric Physiotherapy</td>
-                                                                <td>9962545245</td>
-                                                                <td>10:30 AM</td>
-                                                                <td>11.30 AM</td>
-                                                                <td>2nd main road , Chennai</td>
-                                                                <td>2nd main road , Chennai</td>
-                                                                <td>2nd main road , Chennai</td>
-                                                                <td>0 m</td>
-                                                                <td style="background-color: green; color: white">Completed</td>
+                                                                <td>15-11-2022</td>
+                                                                <td>Priya</td>
+                                                                <td>5 KM</td>
+                                                                <td>10</td>
+                                                                <td>50</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>Neurological Physiotherapy</td>
-                                                                <td>8796852351</td>
-                                                                <td>11:30 AM</td>
-                                                                <td>12:30 AM</td>
-                                                                <td>Nehru Street, Madurai</td>
-                                                                <td>Nehru Street, Madurai</td>
-                                                                <td>Nehru Street, Madurai</td>
-                                                                <td>0 m</td>
-                                                                <td style="background-color: green; color: white">Completed</td>
+                                                                <td>12-09-2022</td>
+                                                                <td>Raja</td>
+                                                                <td>3 KM</td>
+                                                                <td>10</td>
+                                                                <td>30</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>Musculoskeletal Physiotherapy</td>
-                                                                <td>6354875921</td>
-                                                                <td>03:30 PM</td>
-                                                                <td>04:30 PM</td>
-                                                                <td>KTC Nagar,Chennai</td>
-                                                                <td>KT Nagar,Chennai</td>
-                                                                <td>KT Nagar,Chennai</td>
-                                                                <td>5 km</td>
-                                                                <td style="background-color: red; color: white">Mis-match</td>
+                                                                <td>23-02-2022</td>
+                                                                <td>Gokul</td>
+                                                                <td>4 KM</td>
+                                                                <td>10</td>
+                                                                <td>40</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>Magnetic therapy</td>
-                                                                <td>9856475286</td>
-                                                                <td>04:00 PM</td>
-                                                                <td>05:00 PM</td>
-                                                                <td>Tnagar,Chennai</td>
-                                                                <td>Tnagar,Chennai</td>
-                                                                <td>Tnagar,Chennai</td>
-                                                                <td>0 m</td>
-                                                                <td style="background-color: orange; color: white">Not Available</td>
+                                                                <td>19-05-2022</td>
+                                                                <td>Kaviya</td>
+                                                                <td>6 KM</td>
+                                                                <td>10</td>
+                                                                <td>60</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>Hydrotherapy</td>
-                                                                <td>5789456218</td>
-                                                                <td>01:30 PM</td>
-                                                                <td>02:30 PM</td>
-                                                                <td>Ambathur,Chennai</td>
-                                                                <td>Ambathur,Chennai</td>
-                                                                <td>Ambathur,Chennai</td>
-                                                                <td>0 m</td>
-                                                                <td style="background-color: green; color: white">Completed</td>
+                                                                <td>05-01-2023</td>
+                                                                <td>Jenifer</td>
+                                                                <td>8 KM</td>
+                                                                <td>10</td>
+                                                                <td>80</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
