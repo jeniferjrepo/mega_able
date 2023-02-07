@@ -38,6 +38,49 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #163339;
+            color: white;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -206,15 +249,15 @@
                                     <a href="servicetable.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="fa fa-line-chart"></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Services
-                                            </span>
+                                        </span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                 <li class="active">
                                     <a href="AssignService.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class='fa fa-stethoscope fa-lg'></i></span>
-                                        <span class="pcoded-mtext"
-                                            data-i18n="nav.form-components.main">Assign Service</span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Assign
+                                            Service</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -228,7 +271,8 @@
                                 <li>
                                     <a href="create-branchTable.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class='fa fa-snowflake-o'></i></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Create Branch</span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Create
+                                            Branch</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -281,55 +325,102 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-sm-6">
-                                                        <label>Destination</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter Destination">
+                                                        <label>Date</label>
+                                                        <input type="date" class="form-control"
+                                                            placeholder="Select Date">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="col-sm-6">
-                                                        <label>Date</label>
-                                                        <input type="date" class="form-control" placeholder="Select Date">
+                                                        <label>Start Time</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Please Enter Start Time">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label>End Time</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Please Enter End Time">
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="card-block">
-                                                <h4>Add Client</h4>
-                                                <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                        <label>Client Name</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter Client Name">
+                                            <div class="row m-2">
+                                                <div class="col-md-12 col-sm-12 col-lg-12">
+                                                    <div class="tab">
+                                                        <button class="tablinks active"
+                                                            onclick="openCity(event, 'addClient')">Add Client</button>
+                                                        <button class="tablinks"
+                                                            onclick="openCity(event, 'addBranch')">Add Branch</button>
                                                     </div>
-                                                    <div class="col-sm-6">
-                                                        <label>Phone Number</label>
-                                                        <input type="phone" class="form-control"
-                                                            placeholder="Enter Phone Number">
+                                                    <div id="addClient" class="tabcontent" style="display:block">
+                                                        <!-- <h3>Add Client</h3> -->
+                                                        <div class="card-block">
+                                                            <h4>Add Client</h4>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                    <label>Client Name</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Enter Client Name">
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <label>Phone Number</label>
+                                                                    <input type="phone" class="form-control"
+                                                                        placeholder="Enter Phone Number">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                    <label style="display: block;">Address</label>
+                                                                    <textarea class="mt-2" row="57" col="45">
+                                                                    </textarea>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <!-- <label>Service</label><br>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Enter Service"> -->
+                                                                    <label class="mt-3">Time</label><br>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Enter Time">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <button class=" btn text-white float-right"
+                                                                        style="background-color: #448aff;"><a href="#"
+                                                                            style="color:white;">Add</a></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                        <label style="display: block;">Address</label>
-                                                        <textarea class="mt-2" row="57" col="45">
-                                                        </textarea>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <label>Service</label><br>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter Service">
-                                                        <label class="mt-3">Time</label><br>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter Time">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <button class=" btn text-white float-right"
-                                                            style="background-color: #448aff;"><a href="#"
-                                                                style="color:white;">Add</a></button>
+
+                                                    <div id="addBranch" class="tabcontent">
+                                                        <!-- <h3>Add Branch</h3> -->
+                                                        <div class="card-block">
+                                                            <h4>Add Branch</h4>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                    <label>Branch Name</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Enter Branch Name">
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <label>Branch Address</label>
+                                                                    <input type="phone" class="form-control"
+                                                                        placeholder="Enter Branch Address">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <button class=" btn text-white float-right"
+                                                                        style="background-color: #448aff;"><a href="#"
+                                                                            style="color:white;">Add</a></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -355,8 +446,10 @@
                                                                 <td>2nd main road , Chennai</td>
                                                                 <td>Geriatric Physiotherapy</td>
                                                                 <td>11.30 AM</td>
-                                                                <td style="background-color: green; color: white">Completed</td>
-                                                                <td><a href="EditClient.html"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                                                <td style="background-color: green; color: white">
+                                                                    Completed</td>
+                                                                <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Ragul</td>
@@ -364,8 +457,10 @@
                                                                 <td>Nehru Street, Madurai</td>
                                                                 <td>Neurological Physiotherapy</td>
                                                                 <td>12:30 AM</td>
-                                                                <td style="background-color: green; color: white">Completed</td>
-                                                                <td><a href="EditClient.html"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                                                <td style="background-color: green; color: white">
+                                                                    Completed</td>
+                                                                <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Aishwarya</td>
@@ -373,8 +468,10 @@
                                                                 <td>KTC Nagar,Chennai</td>
                                                                 <td>Musculoskeletal Physiotherapy</td>
                                                                 <td>04:30 PM</td>
-                                                                <td style="background-color: red; color: white">Mis-match</td>
-                                                                <td><a href="EditClient.html"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                                                <td style="background-color: red; color: white">
+                                                                    Mis-match</td>
+                                                                <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Ramya</td>
@@ -382,8 +479,10 @@
                                                                 <td>Tnagar,Chennai</td>
                                                                 <td>Magnetic therapy</td>
                                                                 <td>05:00 PM</td>
-                                                                <td style="background-color: orange; color: white">Not Available</td>
-                                                                <td><a href="EditClient.html"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                                                <td style="background-color: orange; color: white">Not
+                                                                    Available</td>
+                                                                <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Roja</td>
@@ -391,13 +490,16 @@
                                                                 <td>Ambathur,Chennai</td>
                                                                 <td>Hydrotherapy</td>
                                                                 <td>02:30 PM</td>
-                                                                <td style="background-color: green; color: white">Completed</td>
-                                                                <td><a href="EditClient.html"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                                                <td style="background-color: green; color: white">
+                                                                    Completed</td>
+                                                                <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
                                             </div>
+
                                         </div>
 
                                     </div>
@@ -461,6 +563,21 @@
     <![endif]-->
     <!-- Warning Section Ends -->
     <!-- Required Jquery -->
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
     <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
     <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
