@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Physio Therapy </title>
+    <title>Physio Therapy</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -190,20 +190,35 @@
                             </div>
                             <ul class="pcoded-item pcoded-left-item mt-3">
                                 <li>
-                                    <a href="userRecord.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="fa fa-user fa-lg"></i></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">User</span>
+                                    <a href="" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="fa fa-address-card-o"></i></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Dashboard</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="AssignService.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class='fa fa-stethoscope fa-lg'></i></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Consultation</span>
+                                    <a href="userRecord.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="fa fa-user fa-lg"></i></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Staff List</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="addservice.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="fa fa-user fa-lg"></i></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Services
+                                            </span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                 <li class="active">
+                                    <a href="AssignService.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class='fa fa-stethoscope fa-lg'></i></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Assign Service</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="Report.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class='fa fa-file-text fa-lg'></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Report</span>
@@ -224,106 +239,102 @@
                                         <div class="card">
                                             <div class="card-header table-header" style="height:52px ;">
                                                 <h5 style="color: white;"><i
-                                                        class="fa fa-file-text fa-lg"></i>&nbsp;&nbsp;Report</h5>
-                                                <!-- <button class="btn float-sm-right text-white"
-                                                    style="background-color: #163339!important; margin-top: -11px;"><i
-                                                        class="fa fa-plus"></i>
-                                                    </button> -->
+                                                        class="fa fa-file-text fa-lg"></i>&nbsp;&nbsp;Assign Service</h5>
+                                                <a href="AssignServiceForm.html" class="btn float-sm-right text-black text-decoration-none"
+                                                    style="background: #fff!important; margin-top: -13px;"><i
+                                                        class="fa fa-plus"></i>Assign
+                                                </a>
                                             </div>
 
-                                            <div class="card-block ">
+                                            <!-- <div class="card-block ">
                                                 <div class="form-group row">
-                                                        <div class="col-sm-6">
-                                                            <label> Staff Name</label>
-                                                            <input type="text" class="form-control" value="Antony">
-                                                        </div>
-                                                    <div class="col-sm-3">
-                                                        <label>Start Date</label>
-                                                        <input type="date" class="form-control"
-                                                            value="25-01-2023">
+                                                    <div class="col-sm-6">
+                                                        <label>Start Date to End Date</label>
+                                                        <input type="text" class="form-control"
+                                                            value="25-02-2022 to 26-02-2022">
                                                     </div>
                                                     <div class="col-sm-3">
-                                                        <label>End Date</label>
-                                                        <input type="date" class="form-control"
-                                                            value="25-01-2023">
+                                                        <label> Number of Patients</label>
+                                                        <input type="text" class="form-control" value="25">
                                                     </div>
-                                                    <!-- <div class="col-sm-3">
+                                                    <div class="col-sm-3">
                                                         <label>Total Amount Fees</label>
                                                         <input type="text" class="form-control" value="5000">
-                                                    </div> -->
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
 
                                             <div class="card-block table-border-style">
                                                 <div class="table-responsive">
                                                     <table class="table">
                                                         <thead>
                                                             <tr>
-                                                                <th>ID</th>
-                                                                <th>Client Name</th>
-                                                                <th>Phone Number</th>
-                                                                <th>Address</th>
                                                                 <th>Service</th>
-                                                                <th>Staff Name</th>
-                                                                <th>Date</th>
+                                                                <th>Client Phone No.</th>
                                                                 <th>Start Time</th>
+                                                                <th>End Time</th>
+                                                                <th>Start Location</th>
+                                                                <th>End Location</th>
+                                                                <th>Destination</th>
+                                                                <th>Distance</th>
+                                                                <th>Status</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td>15632</td>
-                                                                <td>Jenifer</td>
+                                                                <td>Geriatric Physiotherapy</td>
                                                                 <td>9962545245</td>
+                                                                <td>10:30 AM</td>
+                                                                <td>11.30 AM</td>
                                                                 <td>2nd main road , Chennai</td>
-                                                                <td>Neurological Physiotherapy</td>
-                                                                <td>Antony</td>
-                                                                <td>25-01-2023</td>
-                                                                <td>10:30 AM</td>
-                                                              
+                                                                <td>2nd main road , Chennai</td>
+                                                                <td>2nd main road , Chennai</td>
+                                                                <td>0 m</td>
+                                                                <td style="background-color: green; color: white">Completed</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>15633</td>
-                                                                <td>Rahul</td>
+                                                                <td>Neurological Physiotherapy</td>
                                                                 <td>8796852351</td>
+                                                                <td>11:30 AM</td>
+                                                                <td>12:30 AM</td>
                                                                 <td>Nehru Street, Madurai</td>
-                                                                <td>Neurological Physiotherapy</td>
-                                                                <td>Antony</td>
-                                                                <td>01-02-2023</td>
-                                                                <td>11:30 AM</td>
-                                                              
+                                                                <td>Nehru Street, Madurai</td>
+                                                                <td>Nehru Street, Madurai</td>
+                                                                <td>0 m</td>
+                                                                <td style="background-color: green; color: white">Completed</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>15634</td>
-                                                                <td>Manju</td>
+                                                                <td>Musculoskeletal Physiotherapy</td>
                                                                 <td>6354875921</td>
-                                                                <td>KTC Nagar,Chennai</td>
-                                                                <td>Geriatric Physiotherapy</td>
-                                                                <td>Antony</td>
-                                                                <td>02-02-2023</td>
                                                                 <td>03:30 PM</td>
-                                                               
+                                                                <td>04:30 PM</td>
+                                                                <td>KTC Nagar,Chennai</td>
+                                                                <td>KT Nagar,Chennai</td>
+                                                                <td>KT Nagar,Chennai</td>
+                                                                <td>5 km</td>
+                                                                <td style="background-color: red; color: white">Mis-match</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>15635</td>
-                                                                <td>yuvan</td>
+                                                                <td>Magnetic therapy</td>
                                                                 <td>9856475286</td>
+                                                                <td>04:00 PM</td>
+                                                                <td>05:00 PM</td>
                                                                 <td>Tnagar,Chennai</td>
-                                                                <td>Neurological Physiotherapy</td>
-                                                                <td>Antony</td>
-                                                                <td>12-02-2023</td>
-                                                                <td>10:30 AM</td>
-                                                              
+                                                                <td>Tnagar,Chennai</td>
+                                                                <td>Tnagar,Chennai</td>
+                                                                <td>0 m</td>
+                                                                <td style="background-color: orange; color: white">Not Available</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>15636</td>
-                                                                <td>Raja</td>
+                                                                <td>Hydrotherapy</td>
                                                                 <td>5789456218</td>
+                                                                <td>01:30 PM</td>
+                                                                <td>02:30 PM</td>
                                                                 <td>Ambathur,Chennai</td>
-                                                                <td>Geriatric Physiotherapy</td>
-                                                                <td>Antony</td>
-                                                                <td>24-02-2023</td>
-                                                                <td>11:30 AM</td>
-                                                               
+                                                                <td>Ambathur,Chennai</td>
+                                                                <td>Ambathur,Chennai</td>
+                                                                <td>0 m</td>
+                                                                <td style="background-color: green; color: white">Completed</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -338,7 +349,7 @@
                                                                         title="previous page">&#10094;</button></li>
                                                                 <li>
                                                                     <button class="active"
-                                                                        style="background-color:#163339;border-color: #163339;color:white ;"
+                                                                        style="background-color:#448aff;border-color: #448aff;color:white ;"
                                                                         title="first page - page 1">1</button>
                                                                 </li>
                                                                 <li>
@@ -382,8 +393,8 @@
                                                     
                                                     
                                                 </div>
-                                                <!-- <button class=" btn text-white float-right"
-                                                    style="background-color: #448aff;"><i class="fa fa-download fa-lg" aria-hidden="true">&nbsp;&nbsp;Export</i></button> -->
+                                                <button class=" btn text-white float-right"
+                                                    style="background-color: #448aff;"><i class="fa fa-download fa-lg" aria-hidden="true">&nbsp;&nbsp;Export</i></button>
                                                     </div>
                                             </div>
 
