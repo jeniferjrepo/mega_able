@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Physio Therapy </title>
+    <title>Physio Therapy</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -137,7 +137,7 @@
                             </li>
                         </ul>
                         <ul class="nav-right">
-
+                           
                             <li class="user-profile header-notification">
                                 <a href="#!" class="waves-effect waves-light">
                                     <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
@@ -145,7 +145,7 @@
                                     <i class="ti-angle-down"></i>
                                 </a>
                                 <ul class="show-notification profile-notification">
-
+                                    
                                     <li class="waves-effect waves-light">
                                         <a href="#">
                                             <i class="ti-user"></i> Profile
@@ -181,14 +181,14 @@
                                     <ul>
                                         <li class="more-details">
                                             <a href="#"><i class="ti-user"></i>View Profile</a>
-                                            <!-- <a href="#!"><i class="ti-settings"></i>Settings</a> -->
                                             <a href="auth-normal-sign-in.html"><i
                                                     class="ti-layout-sidebar-left"></i>Logout</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-
+            
+                           
                             <ul class="pcoded-item pcoded-left-item mt-3">
                                 <li>
                                     <a href="" class="waves-effect waves-dark">
@@ -197,14 +197,14 @@
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="userRecord.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="fa fa-user fa-lg"></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Staff List</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li >
+                                <li class="active">
                                     <a href="addservice.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="fa fa-user fa-lg"></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Services
@@ -215,8 +215,7 @@
                                 <li>
                                     <a href="Consultation-add.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class='fa fa-stethoscope fa-lg'></i></span>
-                                        <span class="pcoded-mtext"
-                                            data-i18n="nav.form-components.main">Assign Service</span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Assign Service</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -239,81 +238,60 @@
                                     <div class="page-body">
                                         <!-- Basic table card start -->
                                         <div class="card">
-                                            <div class="card-header"
-                                                style="background-color: #00004d; padding-bottom: 0px;padding-top: 15px;">
-                                                <h5 class="text-white "><i class="fa fa-user fa-lg"></i>&nbsp;&nbsp;
-                                                    Staff List</h5>
-                                                <!-- <span>use class <code>table</code> inside table element</span> -->
-                                                <!-- <div class="card-header-right text-white"> -->
+                                            <div class="card-header table-header" style="height:52px ;">
+                                                <h5 style="color: white;"><i
+                                                        class="fa fa-user fa-lg"></i>&nbsp;&nbsp;User</h5>
+
+
                                                 <button class="btn float-sm-right text-white"
-                                                    style="background-color:#00004d;margin-top: -8px;"><a href="userRecord.html" style="color:white"><i
-                                                        class="fa fa-reply"></i>
-                                                    Back</a></button>
-                                                <!-- </div> -->
+                                                    style="background-color: #00004d!important; margin-top: -11px;"><a href="index.html" style="color:white;"><i
+                                                        class="fa fa-plus"></i>
+                                                    ADD</a></button>
+
                                             </div>
-                                            <!-- <div class="form-group row mt-3">
-                                                <div class="col-sm-6">
-                                                </div>
-                                                <div class="col-sm-5">
-                                                    <button class=" btn text-white float-right"
-                                                        style="background-color: #00004d;"><a href="Consultation-details.html" style="color:white;"> <i
-                                                            class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Consultion
-                                                        Details</button>
-                                                </div>
-
-                                            </div> -->
-                                            <div class="card-block ">
-                                                <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                        <label>Name</label>
-                                                        <input type="text" class="form-control" value="Jenifer">
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <label>Employement ID</label>
-                                                        <input type="text" class="form-control" value="EMP16541">
-                                                    </div>
-                                                    
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                        <label>Email</label>
-                                                        <input type="text" class="form-control"
-                                                            value="jeni34@gmail.com">
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <label>Phone Number</label>
-                                                        <input type="text" class="form-control" value="9962545245">
+                                            <div class="card-block">
+                                                <div class="form-group row ">
+                                                    <div class="col-sm-12">
+                                                        <form class="form-material">
+                                                            <div class="form-group form-primary">
+                                                                <input type="text" name="footer-email"
+                                                                    class="form-control" required="">
+                                                                <span class="form-bar"></span>
+                                                                <label class="float-label"><i
+                                                                        class="fa fa-search m-r-10"></i> Search by user
+                                                                    service
+                                                                </label>
+                                                            </div>
+                                                        </form>
                                                     </div>
                                                 </div>
-                                                
-                                                <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                        <label for="exampleFormControlTextarea1">Address</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" 
-                                                            >2nd Main road</textarea>
-                                                    </div>
-                                                    <!-- <div class="col-sm-2">
-                                                        <label>State</label>
-                                                        <input type="text" class="form-control" value="Tamil Nadu">
-                                                    </div>
-                                                    <div class="col-sm-2" >
-                                                        <label>Country</label>
-                                                        <input type="text" class="form-control" value="India">
-                                                    </div>
-                                                    <div class="col-sm-2" >
-                                                        <label>Pincode</label>
-                                                        <input type="text" class="form-control" value="620040">
-                                                    </div> -->
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <button class=" btn file-save text-white float-right"
-                                                            style="background-color: #00004d;"><a href="userRecord.html"
-                                                            style="color:white;">Update</a></button>
-                                                    </div>
-
+                                            </div>
+                                            <div class="card-block table-border-style">
+                                                <div class="table-responsive" style="margin-top:-20px ;">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>SI No</th>
+                                                                <th>Services</th>
+                                                                <th>Duration</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Geriatric Physiotherapy</td>
+                                                                <td>30 Mins</td>
+                                                                <td><button style="background-color: #00004d!important; border: none;border-radius: 5px;"><a href="user-edit.html" style="color:white;"><i class='fa fa-edit' style='color:white'></i></a></button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Neurological Physiotherapy</td>
+                                                                <td>60 Mins</td>
+                                                                <td><button style="background-color: #00004d!important; border: none;border-radius: 5px;"><a href="user-edit.html" style="color:white;"><i class='fa fa-edit' style='color:white'></i></a></button></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
@@ -324,6 +302,7 @@
                             </div>
                             <!-- Main-body end -->
 
+                            <div id="styleSelector">
 
                             </div>
                         </div>
