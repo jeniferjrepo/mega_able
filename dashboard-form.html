@@ -230,8 +230,8 @@
                             </div>
 
                             <ul class="pcoded-item pcoded-left-item mt-3">
-                                <li>
-                                  <a href="dashboard-form.html" class="waves-effect waves-dark">
+                                <li class="active">
+                                    <a href="dashboard-form.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="fa fa-address-card-o"></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Dashboard</span>
                                         <span class="pcoded-mcaret"></span>
@@ -253,7 +253,7 @@
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="AssignService.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class='fa fa-stethoscope fa-lg'></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Assign
@@ -277,7 +277,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="setting-Edit.html" class="waves-effect waves-dark">
+                                    <a href="settingTable.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class='fa fa-cogs'></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Settings</span>
                                         <span class="pcoded-mcaret"></span>
@@ -300,9 +300,10 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="AttendanceReport.html" class="waves-effect waves-dark">
+                                    <a href="WorkingHoursReport.html" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="fa fa-clock-o fa-lg"></i></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Working Hours Report</span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Working Hours
+                                            Report</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -328,16 +329,17 @@
                                         <div class="card">
                                             <div class="card-header table-header" style="height:52px ;">
                                                 <h5 style="color: white;"><i
-                                                        class='fa fa-user fa-lg'></i>&nbsp;&nbsp;Assign Services</h5>
+                                                        class='fa fa-user fa-lg'></i>&nbsp;&nbsp;Dashboard</h5>
                                                 <!-- <button class="btn float-sm-right text-white"
-                                                    style="background-color: #448aff!important; margin-top: -11px;"><i
-                                                        class="fa fa-reply"></i>
-                                                    Back</button> -->
+                                                    style="background-color:#163339;margin-top: -15px;"><a
+                                                        href="AssignService.html" style="color:white"><i
+                                                            class="fa fa-reply"></i>
+                                                        Back</a></button> -->
                                             </div>
 
                                             <div class="card-block">
                                                 <div class="form-group row">
-                                                    <div class="col-sm-6">
+                                                    <!-- <div class="col-sm-6">
                                                         <label>Staff</label>
                                                         <select>
                                                             <option>--Select--</option>
@@ -347,14 +349,14 @@
                                                             <option>Kaviya</option>
                                                             <option>Jenifer</option>
                                                         </select>
-                                                    </div>
-                                                    <div class="col-sm-6">
+                                                    </div> -->
+                                                    <div class="col-sm-12">
                                                         <label>Date</label>
                                                         <input type="date" class="form-control"
                                                             placeholder="Select Date">
                                                     </div>
                                                 </div>
-                                                <div class="form-group row">
+                                                <!-- <div class="form-group row">
                                                     <div class="col-sm-6">
                                                         <label>Start Time</label>
                                                         <input type="text" class="form-control"
@@ -365,48 +367,101 @@
                                                         <input type="text" class="form-control"
                                                             placeholder="Please Enter End Time">
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
 
-                                            <div class="card-block">
-                                                <h4>Add Client</h4>
-                                                <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                        <label>Client Name</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter Client Name">
+                                            <!-- <div class="row m-2">
+                                                <div class="col-md-12 col-sm-12 col-lg-12">
+                                                    <div class="tab">
+                                                        <button class="tablinks active"
+                                                            onclick="openCity(event, 'addClient')">Add Client</button>
+                                                        <button class="tablinks"
+                                                            onclick="openCity(event, 'addBranch')">Add Branch</button>
                                                     </div>
-                                                    <div class="col-sm-6">
-                                                        <label>Phone Number</label>
-                                                        <input type="phone" class="form-control"
-                                                            placeholder="Enter Phone Number">
+                                                    <div id="addClient" class="tabcontent" style="display:block">
+                                                        
+                                                        <div class="card-block">
+                                                            <h4>Add Client</h4>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                    <label>Client Name</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Enter Client Name">
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <label>Phone Number</label>
+                                                                    <input type="phone" class="form-control"
+                                                                        placeholder="Enter Phone Number">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                    <label style="display: block;">Address</label>
+                                                                    <textarea class="mt-2" row="57" col="45">
+                                                                    </textarea>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <label>Service</label><br>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Enter Service">
+                                                                    <label class="mt-3">Time</label><br>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Enter Time">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <button class=" btn text-white float-right"
+                                                                        style="background-color: #448aff;"><a href="#"
+                                                                            style="color:white;">Add</a></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="addBranch" class="tabcontent">
+                                                     
+                                                        <div class="card-block">
+                                                            <h4>Add Branch</h4>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                    <label>Branch Name</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Enter Branch Name">
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <label>Branch Address</label>
+                                                                    <input type="phone" class="form-control"
+                                                                        placeholder="Enter Branch Address">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                    <label>Phone Number</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Enter Phone Number">
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <label>Time</label>
+                                                                    <input type="phone" class="form-control"
+                                                                        placeholder="Enter Time">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <button class=" btn text-white float-right"
+                                                                        style="background-color: #448aff;"><a href="#"
+                                                                            style="color:white;">Add</a></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                        <label style="display: block;">Address</label>
-                                                        <textarea class="mt-2" row="57" col="45">
-                                                        </textarea>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <label>Service</label><br>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter Service">
-                                                        <label class="mt-3">Time</label><br>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter Time">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="col-sm-6">
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <button class=" btn text-white float-right"
-                                                            style="background-color: #448aff;"><a href="#"
-                                                                style="color:white;">Add</a></button>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            </div> -->
 
                                             <div class="card-block ">
                                                 <div class="table-responsive">
@@ -417,9 +472,10 @@
                                                                 <th>Phone Number</th>
                                                                 <th>Address</th>
                                                                 <th>Service</th>
+                                                                <th>Staff Name</th>
                                                                 <th>Time</th>
                                                                 <th>Status</th>
-                                                                <th>Edit</th>
+                                                                
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -428,88 +484,120 @@
                                                                 <td>9962545245</td>
                                                                 <td>2nd main road , Chennai</td>
                                                                 <td>Geriatric Physiotherapy</td>
+                                                                <td>Ganesh</td>
                                                                 <td>11.30 AM</td>
                                                                 <td style="background-color: green; color: white">
                                                                     Completed</td>
-                                                                <td><a href="EditClient.html"><i class="fa fa-pencil"
-                                                                            aria-hidden="true"></i></a></td>
+                                                                <!-- <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td> -->
                                                             </tr>
                                                             <tr>
                                                                 <td>Ragul</td>
                                                                 <td>8796852351</td>
                                                                 <td>Nehru Street, Madurai</td>
                                                                 <td>Neurological Physiotherapy</td>
+                                                                <td>Madhan</td>
                                                                 <td>12:30 AM</td>
                                                                 <td style="background-color: green; color: white">
                                                                     Completed</td>
-                                                                <td><a href="EditClient.html"><i class="fa fa-pencil"
-                                                                            aria-hidden="true"></i></a></td>
+                                                                <!-- <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td> -->
                                                             </tr>
                                                             <tr>
                                                                 <td>Aishwarya</td>
                                                                 <td>6354875921</td>
                                                                 <td>KTC Nagar,Chennai</td>
                                                                 <td>Musculoskeletal Physiotherapy</td>
+                                                                <td>sethu</td>
                                                                 <td>04:30 PM</td>
                                                                 <td style="background-color: red; color: white">
                                                                     Mis-match</td>
-                                                                <td><a href="EditClient.html"><i class="fa fa-pencil"
-                                                                            aria-hidden="true"></i></a></td>
+                                                                <!-- <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td> -->
                                                             </tr>
                                                             <tr>
                                                                 <td>Ramya</td>
                                                                 <td>9856475286</td>
                                                                 <td>Tnagar,Chennai</td>
                                                                 <td>Magnetic therapy</td>
+                                                                <td>Rohith</td>
                                                                 <td>05:00 PM</td>
                                                                 <td style="background-color: orange; color: white">Not
                                                                     Available</td>
-                                                                <td><a href="EditClient.html"><i class="fa fa-pencil"
-                                                                            aria-hidden="true"></i></a></td>
+                                                                <!-- <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td> -->
                                                             </tr>
                                                             <tr>
                                                                 <td>Roja</td>
                                                                 <td>5789456218</td>
                                                                 <td>Ambathur,Chennai</td>
                                                                 <td>Hydrotherapy</td>
+                                                                <td>Siva</td>
                                                                 <td>02:30 PM</td>
                                                                 <td style="background-color: green; color: white">
                                                                     Completed</td>
-                                                                <td><a href="EditClient.html"><i class="fa fa-pencil"
-                                                                            aria-hidden="true"></i></a></td>
+                                                                <!-- <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td> -->
                                                             </tr>
                                                             <tr>
                                                                 <td>Hamsa Rehab</td>
                                                                 <td>5789456218</td>
                                                                 <td>Ambathur,Chennai</td>
                                                                 <td>-</td>
+                                                                <td>Robert</td>
                                                                 <td>02:30 PM</td>
                                                                 <td style="background-color: red; color: white">
                                                                     Mis-match</td>
-                                                                <td><a href="EditClient.html"><i class="fa fa-pencil"
-                                                                            aria-hidden="true"></i></a></td>
+                                                                <!-- <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td> -->
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Anushiya</td>
+                                                                <td>8546792541</td>
+                                                                <td>KTC Nagar,Chennai</td>
+                                                                <td>Knee Pain</td>
+                                                                <td>Ashwin</td>
+                                                                <td>05:30 PM</td>
+                                                                <td style="background-color: green; color: white">
+                                                                    Completed</td>
+                                                                <!-- <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td> -->
                                                             </tr>
                                                             <tr>
                                                                 <td>Hamsa Community</td>
                                                                 <td>5789456218</td>
                                                                 <td>Ambathur,Chennai</td>
                                                                 <td>-</td>
+                                                                <td>Naveen</td>
                                                                 <td>02:30 PM</td>
                                                                 <td style="background-color: orange; color: white">Not
                                                                     Available</td>
-                                                                <td><a href="EditClient.html"><i class="fa fa-pencil"
-                                                                            aria-hidden="true"></i></a></td>
+                                                                <!-- <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td> -->
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Tharun</td>
+                                                                <td>9589457319</td>
+                                                                <td>NH salai,Chennai</td>
+                                                                <td>Join Replacement</td>
+                                                                <td>Arun</td>
+                                                                <td>03:30 PM</td>
+                                                                <td style="background-color: green; color: white">
+                                                                    Completed</td>
+                                                                <!-- <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td> -->
                                                             </tr>
                                                             <tr>
                                                                 <td>Hamsa Rehab for Kids</td>
                                                                 <td>5789456218</td>
                                                                 <td>Ambathur,Chennai</td>
                                                                 <td>-</td>
+                                                                <td>David</td>
                                                                 <td>02:30 PM</td>
                                                                 <td style="background-color: green; color: white">
                                                                     Completed</td>
-                                                                <td><a href="EditClient.html"><i class="fa fa-pencil"
-                                                                            aria-hidden="true"></i></a></td>
+                                                                <!-- <td><a href="EditClient.html"><i class="fa fa-pencil"
+                                                                            aria-hidden="true"></i></a></td> -->
                                                             </tr>
                                                         </tbody>
                                                     </table>
